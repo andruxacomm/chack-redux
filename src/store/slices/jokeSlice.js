@@ -76,6 +76,4 @@ const prepareJokeStructure = (joke) => {
     }
 }
 
-export const jokeReducer = joke.reducer;
-
 export const selectJoke = state => state.joke;

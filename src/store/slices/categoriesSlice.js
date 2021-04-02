@@ -33,6 +33,4 @@ export const categories = createSlice({
 
 const prepareCategory = (cat => typeof cat === 'string' ? cat : '');
 
-export const categoriesReducer =  categories.reducer;
-
 export const selectCategories = state => state.categories;

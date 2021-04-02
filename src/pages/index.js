@@ -1,7 +1,15 @@
-import {fetchRandom, fetchRandomByCategory, Jokes, selectJoke, asyncSearch} from "../components/jokes";
-import {Categories, fetchCategories, selectCategories} from "../components/categories";
+import {Jokes} from "../components/jokes";
+import {Categories} from "../components/categories";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
+import {
+    asyncSearch,
+    fetchCategories,
+    fetchRandom,
+    fetchRandomByCategory,
+    selectCategories,
+    selectJoke
+} from "../store/slices";
 
 export const IndexPage = () => {
     const dispatch = useDispatch();
