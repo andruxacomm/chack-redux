@@ -19,7 +19,7 @@ export const categories = createSlice({
             state.isPending = true;
         },
         [fetchCategories.fulfilled]: (state, action) => {
-            state.value = action.payload.map(prepareCategorySlice);
+            state.value = action.payload.map(prepareCategory);
             state.isPending = false;
             state.isSuccess = true;
         },
@@ -31,7 +31,7 @@ export const categories = createSlice({
     }
 })
 
-const prepareCategorySlice = (i => typeof i === 'string' ? i : '');
+const prepareCategory = (cat => typeof cat === 'string' ? cat : '');
 
 export const categoriesReducer =  categories.reducer;
 

@@ -59,7 +59,7 @@ export const joke = createSlice({
             state.isPending = false;
             state.isSuccess = true;
         },
-        [asyncSearch.rejected]: (state, action) => {
+        [asyncSearch.rejected]: (state) => {
             state.isPending = false;
         },
     }

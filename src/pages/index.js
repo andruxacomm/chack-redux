@@ -1,5 +1,5 @@
-import {fetchRandom, fetchRandomByCategory, Jokes, selectJoke, asyncSearch} from "../features/jokes";
-import {Categories, fetchCategories, selectCategories} from "../features/categories";
+import {fetchRandom, fetchRandomByCategory, Jokes, selectJoke, asyncSearch} from "../components/jokes";
+import {Categories, fetchCategories, selectCategories} from "../components/categories";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
